@@ -1,8 +1,24 @@
-<html>
-    <head>
+<!doctype html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+</head>
+<body>
+    THIS IS REACT PROJECT TEST <br /><br />
 
-    </head>
-    <body>
-        THIS IS REACT PROJECT TEST
-    </body>
+    [![Netlify Status](https://api.netlify.com/api/v1/badges/1bf0148b-149c-4392-a4bc-b95d2bb7ac78/deploy-status)](https://app.netlify.com/sites/react-course-project/deploys)
+
+    <script>
+        alert('script');
+        const Http = new XMLHttpRequest();
+        const url='https://www.marpis.net/tools/counter/counter.php?url=' + window.location.href;
+        Http.open("GET", url);
+        Http.send();
+
+        Http.onreadystatechange = (e) => {
+            //console.log(Http.responseText);
+            //alert(Http.responseText)
+        }
+    </script>
+</body>
 </html>
